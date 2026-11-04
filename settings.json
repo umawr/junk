@@ -1,0 +1,234 @@
+// Zed setup
+{
+  /* ==========================================================
+     GLOBAL EDITOR PREFERENCES
+     ========================================================== */
+  "markdown_preview": {
+    "heading_font_weight": 450.0 // Sets font weight for markdown headings
+  },
+  "cli_default_open_behavior": "existing_window", // Opens files from terminal in your current window
+  "buffer_font_weight": 400.0, // Normal font weight for code text
+  "buffer_line_height": "comfortable", // Spacing between lines of code
+  "agent_ui_font_size": 10.0, // Font size for AI assistant panels
+  "ui_font_weight": 400.0, // Font weight for user interface labels
+  "status_bar": {
+    "experimental.show": false // Hides the bottom status bar completely
+  },
+  "minimap": {
+    "show": "always" // Keeps the code minimap visible on the side
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000 // Automatically saves files 1 second after you stop typing
+    }
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)" // Sets file tree icon styling
+  },
+  "base_keymap": "VSCode", // Uses VS Code keyboard shortcuts
+  "ui_font_size": 14.0, // Font size for interface elements
+  "buffer_font_size": 14.0, // Font size for your code text
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Transparent Prism" // Active light and dark themes
+  },
+  "agent": {
+    "threads_sidebar": {
+      "auto_open": false // Prevents the AI chat sidebar from opening automatically
+    }
+  },
+  "disable_ai": true, // Turns off built-in AI tools
+  "project_panel": {
+    "dock": "left",
+    "default_width": 160 // Sets the file explorer panel width on the left
+  },
+
+  /* ==========================================================
+     THEME OVERRIDES (Custom Theme Styling)
+     ========================================================== */
+  "theme_overrides": {
+
+    /* --- TRANSPARENT PRISM THEME --- */
+    "Transparent Prism": {
+      /* 
+        TRANSPARENCY CONTROL:
+        The last two hex digits control opacity (00 = fully transparent/glass, ff = solid).
+        Change "#00000000" to something like "#00000088" if you want a semi-transparent dark tint.
+      */
+      "background": "#00000000",             // Main window background transparency
+      "editor.background": "#00000000",      // Code editing area transparency
+      "editor.gutter.background": "#00000000", // Line number column transparency
+      "editor.active_line.background": "#00000000", // Highlight background for the line you're typing on
+      "title_bar.background": "#00000000",   // Window title bar transparency
+      "tab_bar.background": "#00000000",     // File tabs container transparency
+      "tab.inactive_background": "#00000000",// Inactive file tab transparency
+      "tab.active_background": "#00000000",  // Active file tab transparency
+      "toolbar.background": "#00000000",     // Top toolbar transparency
+      "status_bar.background": "#00000000",  // Status bar transparency
+      "panel.background": "#00000000",       // Bottom/side panel background transparency
+      "panel.focused_border": "#00000000",   // Panel border color
+      "terminal.background": "#00000000",    // Built-in terminal background transparency
+      "surface.background": "#00000000",     // General UI card/surface background
+      "elevated_surface.background": "#00000000", // Dropdowns and menus background
+      "border.variant": "#00000000",         // Secondary structural borders
+      "border": "#00000000",                 // Primary structural borders
+
+      /* SYNTAX HIGHLIGHTING COLORS (Transparent Prism) */
+      "syntax": {
+        "comment": { "color": "#8e8e8e" },       // Code comments (Gray)
+        "keyword": { "color": "#ffc799" },       // Language keywords like `int`, `return` (Peach/Orange)
+        "function": { "color": "#ffc799" },      // Function names (Peach/Orange)
+        "string": { "color": "#ffc799" },        // Text strings in quotes (Peach/Orange)
+        "number": { "color": "#ffc799" },        // Numeric values (Peach/Orange)
+        "boolean": { "color": "#ffc799" },       // True/False values (Peach/Orange)
+        "constant": { "color": "#ffc799" },      // Constant declarations (Peach/Orange)
+        "type": { "color": "#f2f2f2" },          // Data types (Off-white)
+        "variable": { "color": "#f2f2f2" },      // Variable names (Off-white)
+        "property": { "color": "#f2f2f2" },      // Object properties (Off-white)
+        "operator": { "color": "#f2f2f2" },      // Symbols like +, -, = (Off-white)
+        "punctuation": { "color": "#f2f2f2" },   // General punctuation (Off-white)
+        "punctuation.bracket": { "color": "#f2f2f2" },    // Brackets { } [ ] (Off-white)
+        "punctuation.delimiter": { "color": "#f2f2f2" },  // Commas and semicolons (Off-white)
+        "preproc": { "color": "#ffc799" },       // Preprocessor directives like `#include` (Peach/Orange)
+        "attribute": { "color": "#f2f2f2" }      // Attributes/decorators (Off-white)
+      },
+      "text.accent": "#ffc799",      // Primary UI highlight color (Peach/Orange)
+      "border.focused": "#ffc799",   // Border color for focused UI elements
+      "link_text.hover": "#ffc799"   // Hyperlink color on hover
+    },
+
+    /* --- VESPER THEME (Pitch Black Background + Peach Syntax) --- */
+    "Vesper": {
+      "background": "#000000",             // Solid pitch black window background
+      "editor.background": "#000000",      // Solid pitch black code editor background
+      "editor.gutter.background": "#000000", // Solid line number background
+      "editor.active_line.background": "#000000", // Active line background
+      "title_bar.background": "#000000",   // Title bar background
+      "tab_bar.background": "#000000",     // Tab bar background
+      "tab.inactive_background": "#000000",// Inactive tab background
+      "tab.active_background": "#000000",  // Active tab background
+      "toolbar.background": "#000000",     // Toolbar background
+      "status_bar.background": "#000000",  // Status bar background
+      "panel.background": "#000000",       // Panel background
+      "panel.focused_border": "#000000",   // Panel border
+      "terminal.background": "#000000",    // Terminal background
+      "surface.background": "#000000",     // Surface background
+      "elevated_surface.background": "#000000", // Elevated surface background
+      "border.variant": "#000000",         // Border variant
+      "border": "#000000",                 // Border color
+
+      /* SYNTAX HIGHLIGHTING COLORS (Vesper) */
+      "syntax": {
+        "comment": { "color": "#8e8e8e" },       // Gray code comments
+        "keyword": { "color": "#ffc799" },       // Peach keywords
+        "function": { "color": "#ffc799" },      // Peach functions
+        "string": { "color": "#ffc799" },        // Peach strings
+        "number": { "color": "#ffc799" },        // Peach numbers
+        "boolean": { "color": "#ffc799" },       // Peach booleans
+        "constant": { "color": "#ffc799" },      // Peach constants
+        "type": { "color": "#f2f2f2" },          // Off-white types
+        "variable": { "color": "#f2f2f2" },      // Off-white variables
+        "property": { "color": "#f2f2f2" },      // Off-white properties
+        "operator": { "color": "#f2f2f2" },      // Off-white operators
+        "punctuation": { "color": "#f2f2f2" },   // Off-white punctuation
+        "punctuation.bracket": { "color": "#f2f2f2" },    // Off-white brackets
+        "punctuation.delimiter": { "color": "#f2f2f2" },  // Off-white delimiters
+        "preproc": { "color": "#ffc799" },       // Peach preprocessor macros (#include)
+        "attribute": { "color": "#f2f2f2" }      // Off-white attributes
+      },
+      "text.accent": "#ffc799",      // Peach accent color
+      "border.focused": "#ffc799",   // Peach focused border
+      "link_text.hover": "#ffc799"   // Peach link hover
+    },
+
+    /* --- ONE LIGHT THEME (Soft Light Mode) --- */
+    "One Light": {
+      "background": "#faf9f6",             // Soft cream window background
+      "editor.background": "#faf9f6",      // Soft cream editor background
+      "editor.gutter.background": "#faf9f6", // Soft cream line numbers background
+      "editor.active_line.background": "#faf9f6", // Active line background
+      "title_bar.background": "#faf9f6",   // Title bar background
+      "tab_bar.background": "#faf9f6",     // Tab bar background
+      "tab.inactive_background": "#faf9f6",// Inactive tab background
+      "tab.active_background": "#faf9f6",  // Active tab background
+      "toolbar.background": "#faf9f6",     // Toolbar background
+      "status_bar.background": "#faf9f6",  // Status bar background
+      "panel.background": "#faf9f6",       // Panel background
+      "panel.focused_border": "#faf9f6",   // Panel border
+      "terminal.background": "#faf9f6",    // Terminal background
+      "surface.background": "#faf9f6",     // Surface background
+      "elevated_surface.background": "#faf9f6", // Elevated surface background
+      "border.variant": "#faf9f6",         // Border variant
+      "border": "#faf9f6",                 // Border color
+    
+      /* SYNTAX HIGHLIGHTING COLORS (One Light) */
+      "syntax": {
+        "comment": { "color": "#4a4a4a" },       // Dark gray comments for visibility
+        "comment.doc": { "color": "#4a4a4a" },   // Documentation comments
+        "keyword": { "color": "#9c3b00" },       // Deep rust/orange keywords
+        "function": { "color": "#9c3b00" },      // Rust/orange functions
+        "string": { "color": "#9c3b00" },        // Rust/orange strings
+        "string.escape": { "color": "#9c3b00" }, // Escape sequences
+        "number": { "color": "#9c3b00" },        // Rust/orange numbers
+        "boolean": { "color": "#9c3b00" },       // Rust/orange booleans
+        "constant": { "color": "#9c3b00" },      // Rust/orange constants
+        "preproc": { "color": "#9c3b00" },       // Rust/orange preprocessor tags
+        "type": { "color": "#000000" },          // Pure black types
+        "variable": { "color": "#000000" },      // Pure black variables
+        "variable.special": { "color": "#000000" }, // Special variables
+        "property": { "color": "#000000" },      // Pure black properties
+        "operator": { "color": "#000000" },      // Pure black operators
+        "punctuation": { "color": "#000000" },   // Pure black punctuation
+        "punctuation.bracket": { "color": "#000000" },    // Pure black brackets
+        "punctuation.delimiter": { "color": "#000000" },  // Pure black delimiters
+        "attribute": { "color": "#000000" }      // Pure black attributes
+      },
+      "text.accent": "#9c3b00",      // Rust/orange accent color
+      "border.focused": "#9c3b00",   // Focused border color
+      "link_text.hover": "#9c3b00"   // Link hover color
+    }
+  },
+
+  /* ==========================================================
+     UI COMPONENT & LAYOUT SETTINGS
+     ========================================================== */
+  "title_bar": {
+    "show_branch_name": false, // Hides git branch name from top title bar
+    "show_user_menu": false    // Hides user profile menu from title bar
+  },
+  "tab_bar": {
+    "show": false // Hides the file tabs bar across the top
+  },
+  "toolbar": {
+    "quick_actions": false // Hides quick action buttons in toolbars
+  },
+  "scrollbar": {
+    "show": "never" // Completely hides scrollbars for a cleaner look
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false // Hides code folding indicators in the gutter
+  },
+  "indent_guides": {}, // Indentation guide rules
+  "terminal": {
+    "dock": "right",
+    "default_width": 300 // Docks the integrated terminal on the right side with 300px width
+  },
+
+  /* ==========================================================
+     LANGUAGE SERVER PROTOCOL (LSP) CONFIGURATION
+     ========================================================== */
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--query-driver=C:\\MinGW\\bin\\gcc.exe", // Points clangd to your MinGW GCC compiler driver
+          "--fallback-flags=-IC:\\MinGW\\include -IC:\\MinGW\\lib\\gcc\\mingw32\\*\\include" // Sets fallback include paths for C compilation headers
+        ]
+      }
+    }
+  }
+}
