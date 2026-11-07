@@ -1,0 +1,238 @@
+{
+  /* ==========================================================
+     GLOBAL EDITOR PREFERENCES
+     ========================================================== */
+  "markdown_preview": {
+    "heading_font_weight": 450.0
+  },
+  "cli_default_open_behavior": "existing_window",
+  "buffer_font_weight": 400.0,
+  "buffer_line_height": "comfortable",
+  "agent_ui_font_size": 10.0,
+  "ui_font_weight": 400.0,
+  "status_bar": {
+    "experimental.show": false
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "agent": {
+    "threads_sidebar": {
+      "auto_open": false
+    }
+  },
+  "disable_ai": true,
+  "project_panel": {
+    "dock": "left",
+    "default_width": 160
+  },
+
+  /* ==========================================================
+     THEME OVERRIDES
+     ========================================================== */
+  "theme_overrides": {
+
+    /* --- 1. ONE DARK THEME --- */
+    "One Dark": {
+      "background": "#000000",
+      "editor.background": "#000000",
+      "editor.gutter.background": "#000000",
+      "editor.active_line.background": "#000000",
+      
+      // Correct Zed player selection styling for gray highlight
+      "players": [
+        {
+          "selection": "#ffffff33"
+        }
+      ],
+
+      "title_bar.background": "#000000",
+      "tab_bar.background": "#000000",
+      "tab.inactive_background": "#000000",
+      "tab.active_background": "#000000",
+      "toolbar.background": "#000000",
+      "status_bar.background": "#000000",
+      "panel.background": "#000000",
+      "panel.focused_border": "#000000",
+      "terminal.background": "#000000",
+      "surface.background": "#000000",
+      "elevated_surface.background": "#000000",
+      "border.variant": "#000000",
+      "border": "#000000",
+
+      "syntax": {
+        "comment": { "color": "#8e8e8e" },
+        "keyword": { "color": "#ffc799" },
+        "function": { "color": "#ffc799" },
+        "string": { "color": "#ffc799" },
+        "number": { "color": "#ffc799" },
+        "boolean": { "color": "#ffc799" },
+        "constant": { "color": "#ffc799" },
+        "type": { "color": "#f2f2f2" },
+        "variable": { "color": "#f2f2f2" },
+        "property": { "color": "#f2f2f2" },
+        "operator": { "color": "#f2f2f2" },
+        "punctuation": { "color": "#f2f2f2" },
+        "punctuation.bracket": { "color": "#f2f2f2" },
+        "punctuation.delimiter": { "color": "#f2f2f2" },
+        "preproc": { "color": "#ffc799" },
+        "attribute": { "color": "#f2f2f2" }
+      },
+      "text.accent": "#ffc799",
+      "border.focused": "#ffc799",
+      "link_text.hover": "#ffc799"
+    },
+
+    /* --- 2. VESPER THEME --- */
+    "Vesper": {
+      "background": "#000000",
+      "editor.background": "#000000",
+      "editor.gutter.background": "#000000",
+      "editor.active_line.background": "#000000",
+      "players": [
+        {
+          "selection": "#ffffff33"
+        }
+      ],
+      "title_bar.background": "#000000",
+      "tab_bar.background": "#000000",
+      "tab.inactive_background": "#000000",
+      "tab.active_background": "#000000",
+      "toolbar.background": "#000000",
+      "status_bar.background": "#000000",
+      "panel.background": "#000000",
+      "panel.focused_border": "#000000",
+      "terminal.background": "#000000",
+      "surface.background": "#000000",
+      "elevated_surface.background": "#000000",
+      "border.variant": "#000000",
+      "border": "#000000",
+
+      "syntax": {
+        "comment": { "color": "#8e8e8e" },
+        "keyword": { "color": "#ffc799" },
+        "function": { "color": "#ffc799" },
+        "string": { "color": "#ffc799" },
+        "number": { "color": "#ffc799" },
+        "boolean": { "color": "#ffc799" },
+        "constant": { "color": "#ffc799" },
+        "type": { "color": "#f2f2f2" },
+        "variable": { "color": "#f2f2f2" },
+        "property": { "color": "#f2f2f2" },
+        "operator": { "color": "#f2f2f2" },
+        "punctuation": { "color": "#f2f2f2" },
+        "punctuation.bracket": { "color": "#f2f2f2" },
+        "punctuation.delimiter": { "color": "#f2f2f2" },
+        "preproc": { "color": "#ffc799" },
+        "attribute": { "color": "#f2f2f2" }
+      },
+      "text.accent": "#ffc799",
+      "border.focused": "#ffc799",
+      "link_text.hover": "#ffc799"
+    },
+
+    /* --- 3. ONE LIGHT THEME --- */
+    "One Light": {
+      "background": "#faf9f6",
+      "editor.background": "#faf9f6",
+      "editor.gutter.background": "#faf9f6",
+      "editor.active_line.background": "#faf9f6",
+      "title_bar.background": "#faf9f6",
+      "tab_bar.background": "#faf9f6",
+      "tab.inactive_background": "#faf9f6",
+      "tab.active_background": "#faf9f6",
+      "toolbar.background": "#faf9f6",
+      "status_bar.background": "#faf9f6",
+      "panel.background": "#faf9f6",
+      "panel.focused_border": "#faf9f6",
+      "terminal.background": "#faf9f6",
+      "surface.background": "#faf9f6",
+      "elevated_surface.background": "#faf9f6",
+      "border.variant": "#faf9f6",
+      "border": "#faf9f6",
+    
+      "syntax": {
+        "comment": { "color": "#4a4a4a" },
+        "comment.doc": { "color": "#4a4a4a" },
+        "keyword": { "color": "#9c3b00" },
+        "function": { "color": "#9c3b00" },
+        "string": { "color": "#9c3b00" },
+        "string.escape": { "color": "#9c3b00" },
+        "number": { "color": "#9c3b00" },
+        "boolean": { "color": "#9c3b00" },
+        "constant": { "color": "#9c3b00" },
+        "preproc": { "color": "#9c3b00" },
+        "type": { "color": "#000000" },
+        "variable": { "color": "#000000" },
+        "variable.special": { "color": "#000000" },
+        "property": { "color": "#000000" },
+        "operator": { "color": "#000000" },
+        "punctuation": { "color": "#000000" },
+        "punctuation.bracket": { "color": "#000000" },
+        "punctuation.delimiter": { "color": "#000000" },
+        "attribute": { "color": "#000000" }
+      },
+      "text.accent": "#9c3b00",
+      "border.focused": "#9c3b00",
+      "link_text.hover": "#9c3b00"
+    }
+  },
+
+  /* ==========================================================
+     UI COMPONENT & LAYOUT SETTINGS
+     ========================================================== */
+  "title_bar": {
+    "show_branch_name": false,
+    "show_user_menu": false
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "toolbar": {
+    "quick_actions": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false
+  },
+  "indent_guides": {},
+  "terminal": {
+    "dock": "right",
+    "default_width": 300
+  },
+
+  /* ==========================================================
+     LANGUAGE SERVER PROTOCOL (LSP) CONFIGURATION
+     ========================================================== */
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--query-driver=C:\\MinGW\\bin\\gcc.exe",
+          "--fallback-flags=-IC:\\MinGW\\include -IC:\\MinGW\\lib\\gcc\\mingw32\\*\\include"
+        ]
+      }
+    }
+  }
+}
