@@ -1,109 +1,147 @@
-// Zed setup
 {
   /* ==========================================================
      GLOBAL EDITOR PREFERENCES
      ========================================================== */
   "markdown_preview": {
-    "heading_font_weight": 450.0 // Sets font weight for markdown headings
+    "heading_font_weight": 450.0 // Controls font thickness for markdown titles
   },
-  "cli_default_open_behavior": "existing_window", // Opens files from terminal in your current window
-  "buffer_font_weight": 400.0, // Normal font weight for code text
-  "buffer_line_height": "comfortable", // Spacing between lines of code
-  "agent_ui_font_size": 10.0, // Font size for AI assistant panels
-  "ui_font_weight": 400.0, // Font weight for user interface labels
+  "cli_default_open_behavior": "existing_window", // Opens files from terminal in your active window
+  "buffer_font_weight": 400.0, // Sets thickness for your code text
+  "buffer_line_height": "comfortable", // Spacing height between lines of code
+  "agent_ui_font_size": 10.0, // Text size for the AI assistant panel
+  "ui_font_weight": 400.0, // Thickness for user interface text labels
   "status_bar": {
-    "experimental.show": false // Hides the bottom status bar completely
+    "experimental.show": false // Completely hides the bottom status bar
   },
   "minimap": {
-    "show": "always" // Keeps the code minimap visible on the side
+    "show": "always" // Keeps the code scroll minimap visible on the right edge
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000 // Automatically saves files 1 second after you stop typing
+      "milliseconds": 1000 // Automatically saves your code 1 second after you stop typing
     }
   },
   "icon_theme": {
-    "mode": "dark",
+    "mode": "light",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)" // Sets file tree icon styling
+    "dark": "Zed (Default)" // Controls file tree icon styles
   },
-  "base_keymap": "VSCode", // Uses VS Code keyboard shortcuts
-  "ui_font_size": 14.0, // Font size for interface elements
-  "buffer_font_size": 14.0, // Font size for your code text
+  "base_keymap": "VSCode", // Maps standard shortcuts to match VS Code habits
+  "ui_font_size": 14.0, // Font size for menus and sidebars
+  "buffer_font_size": 14.0, // Font size for code in the editor
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Transparent Prism" // Active light and dark themes
+    "dark": "Dark Violet (Transparent)" // Sets your active dark theme (change this to "Transparent Prism" to switch back)
   },
   "agent": {
     "threads_sidebar": {
-      "auto_open": false // Prevents the AI chat sidebar from opening automatically
+      "auto_open": false // Prevents the AI chat sidebar from popping open automatically
     }
   },
-  "disable_ai": true, // Turns off built-in AI tools
+  "disable_ai": true, // Disables built-in AI tools
   "project_panel": {
     "dock": "left",
-    "default_width": 160 // Sets the file explorer panel width on the left
+    "default_width": 160 // Sets the width of your file explorer sidebar on the left
   },
 
   /* ==========================================================
-     THEME OVERRIDES (Custom Theme Styling)
+     THEME OVERRIDES (Custom Theme Styling & Colors)
      ========================================================== */
   "theme_overrides": {
 
-    /* --- TRANSPARENT PRISM THEME --- */
-    "Transparent Prism": {
-      /* 
-        TRANSPARENCY CONTROL:
-        The last two hex digits control opacity (00 = fully transparent/glass, ff = solid).
-        Change "#00000000" to something like "#00000088" if you want a semi-transparent dark tint.
-      */
-      "background": "#00000000",             // Main window background transparency
-      "editor.background": "#00000000",      // Code editing area transparency
-      "editor.gutter.background": "#00000000", // Line number column transparency
-      "editor.active_line.background": "#00000000", // Highlight background for the line you're typing on
+    /* --- DARK VIOLET (TRANSPARENT) THEME [Cleaned to Peach/Gray] --- */
+    "Dark Violet (Transparent)": {
+      // Background Transparency Controls (Change "#00000000" to add opacity if needed)
+      "background": "#00000000",             // Main window frame transparency
+      "editor.background": "#00000000",      // Coding area background transparency
+      "editor.gutter.background": "#00000000", // Line number column background transparency
+      "editor.active_line.background": "#00000000", // Highlight background for the line you're on
       "title_bar.background": "#00000000",   // Window title bar transparency
-      "tab_bar.background": "#00000000",     // File tabs container transparency
-      "tab.inactive_background": "#00000000",// Inactive file tab transparency
-      "tab.active_background": "#00000000",  // Active file tab transparency
-      "toolbar.background": "#00000000",     // Top toolbar transparency
-      "status_bar.background": "#00000000",  // Status bar transparency
-      "panel.background": "#00000000",       // Bottom/side panel background transparency
+      "tab_bar.background": "#00000000",     // Top file tab container transparency
+      "tab.inactive_background": "#00000000",// Unselected tab transparency
+      "tab.active_background": "#00000000",  // Selected active tab transparency
+      "toolbar.background": "#00000000",     // Top toolbar background transparency
+      "status_bar.background": "#00000000",  // Status bar background transparency
+      "panel.background": "#00000000",       // Side/bottom terminal panel transparency
       "panel.focused_border": "#00000000",   // Panel border color
       "terminal.background": "#00000000",    // Built-in terminal background transparency
-      "surface.background": "#00000000",     // General UI card/surface background
-      "elevated_surface.background": "#00000000", // Dropdowns and menus background
-      "border.variant": "#00000000",         // Secondary structural borders
+      "surface.background": "#00000000",     // General UI card background
+      "elevated_surface.background": "#00000000", // Dropdown menus and popups background
+      "border.variant": "#00000000",         // Secondary borders
       "border": "#00000000",                 // Primary structural borders
 
-      /* SYNTAX HIGHLIGHTING COLORS (Transparent Prism) */
+      // Syntax Highlighting (Code Text Colors)
       "syntax": {
         "comment": { "color": "#8e8e8e" },       // Code comments (Gray)
         "keyword": { "color": "#ffc799" },       // Language keywords like `int`, `return` (Peach/Orange)
         "function": { "color": "#ffc799" },      // Function names (Peach/Orange)
-        "string": { "color": "#ffc799" },        // Text strings in quotes (Peach/Orange)
+        "string": { "color": "#ffc799" },        // Text strings inside quotes (Peach/Orange)
         "number": { "color": "#ffc799" },        // Numeric values (Peach/Orange)
         "boolean": { "color": "#ffc799" },       // True/False values (Peach/Orange)
-        "constant": { "color": "#ffc799" },      // Constant declarations (Peach/Orange)
+        "constant": { "color": "#ffc799" },      // Constant items (Peach/Orange)
         "type": { "color": "#f2f2f2" },          // Data types (Off-white)
         "variable": { "color": "#f2f2f2" },      // Variable names (Off-white)
         "property": { "color": "#f2f2f2" },      // Object properties (Off-white)
-        "operator": { "color": "#f2f2f2" },      // Symbols like +, -, = (Off-white)
+        "operator": { "color": "#f2f2f2" },      // Math/logical operators like +, -, = (Off-white)
         "punctuation": { "color": "#f2f2f2" },   // General punctuation (Off-white)
         "punctuation.bracket": { "color": "#f2f2f2" },    // Brackets { } [ ] (Off-white)
         "punctuation.delimiter": { "color": "#f2f2f2" },  // Commas and semicolons (Off-white)
-        "preproc": { "color": "#ffc799" },       // Preprocessor directives like `#include` (Peach/Orange)
+        "preproc": { "color": "#ffc799" },       // Preprocessor lines like `#include` (Peach/Orange)
         "attribute": { "color": "#f2f2f2" }      // Attributes/decorators (Off-white)
       },
       "text.accent": "#ffc799",      // Primary UI highlight color (Peach/Orange)
-      "border.focused": "#ffc799",   // Border color for focused UI elements
-      "link_text.hover": "#ffc799"   // Hyperlink color on hover
+      "border.focused": "#ffc799",   // Border color for active text fields/elements
+      "link_text.hover": "#ffc799"   // Hyperlink color when hovered
     },
 
-    /* --- VESPER THEME (Pitch Black Background + Peach Syntax) --- */
+    /* ---  TRANSPARENT PRISM THEME [The older blurry transparent one] --- */
+    "Transparent Prism": {
+      "background": "#00000000",             // Window background transparency
+      "editor.background": "#00000000",      // Code editor area transparency
+      "editor.gutter.background": "#00000000", // Line number gutter transparency
+      "editor.active_line.background": "#00000000", // Active line highlight
+      "title_bar.background": "#00000000",   // Title bar background
+      "tab_bar.background": "#00000000",     // Tab container background
+      "tab.inactive_background": "#00000000",// Inactive tab background
+      "tab.active_background": "#00000000",  // Active tab background
+      "toolbar.background": "#00000000",     // Toolbar background
+      "status_bar.background": "#00000000",  // Status bar background
+      "panel.background": "#00000000",       // Panel background
+      "panel.focused_border": "#00000000",   // Panel border
+      "terminal.background": "#00000000",    // Terminal background
+      "surface.background": "#00000000",     // Surface background
+      "elevated_surface.background": "#00000000", // Elevated surface background
+      "border.variant": "#00000000",         // Border variant
+      "border": "#00000000",                 // Border color
+
+      "syntax": {
+        "comment": { "color": "#8e8e8e" },       // Gray comments
+        "keyword": { "color": "#ffc799" },       // Peach keywords
+        "function": { "color": "#ffc799" },      // Peach functions
+        "string": { "color": "#ffc799" },        // Peach strings
+        "number": { "color": "#ffc799" },        // Peach numbers
+        "boolean": { "color": "#ffc799" },       // Peach booleans
+        "constant": { "color": "#ffc799" },      // Peach constants
+        "type": { "color": "#f2f2f2" },          // Off-white types
+        "variable": { "color": "#f2f2f2" },      // Off-white variables
+        "property": { "color": "#f2f2f2" },      // Off-white properties
+        "operator": { "color": "#f2f2f2" },      // Off-white operators
+        "punctuation": { "color": "#f2f2f2" },   // Off-white punctuation
+        "punctuation.bracket": { "color": "#f2f2f2" },    // Off-white brackets
+        "punctuation.delimiter": { "color": "#f2f2f2" },  // Off-white delimiters
+        "preproc": { "color": "#ffc799" },       // Peach preprocessor macros
+        "attribute": { "color": "#f2f2f2" }      // Off-white attributes
+      },
+      "text.accent": "#ffc799",
+      "border.focused": "#ffc799",
+      "link_text.hover": "#ffc799"
+    },
+
+    /* ---  VESPER THEME [Solid Pitch Black Dark Mode] --- */
     "Vesper": {
-      "background": "#000000",             // Solid pitch black window background
-      "editor.background": "#000000",      // Solid pitch black code editor background
+      "background": "#000000",             // Solid black window background
+      "editor.background": "#000000",      // Solid black editor background
       "editor.gutter.background": "#000000", // Solid line number background
       "editor.active_line.background": "#000000", // Active line background
       "title_bar.background": "#000000",   // Title bar background
@@ -120,9 +158,8 @@
       "border.variant": "#000000",         // Border variant
       "border": "#000000",                 // Border color
 
-      /* SYNTAX HIGHLIGHTING COLORS (Vesper) */
       "syntax": {
-        "comment": { "color": "#8e8e8e" },       // Gray code comments
+        "comment": { "color": "#8e8e8e" },       // Gray comments
         "keyword": { "color": "#ffc799" },       // Peach keywords
         "function": { "color": "#ffc799" },      // Peach functions
         "string": { "color": "#ffc799" },        // Peach strings
@@ -136,19 +173,19 @@
         "punctuation": { "color": "#f2f2f2" },   // Off-white punctuation
         "punctuation.bracket": { "color": "#f2f2f2" },    // Off-white brackets
         "punctuation.delimiter": { "color": "#f2f2f2" },  // Off-white delimiters
-        "preproc": { "color": "#ffc799" },       // Peach preprocessor macros (#include)
+        "preproc": { "color": "#ffc799" },       // Peach preprocessor macros
         "attribute": { "color": "#f2f2f2" }      // Off-white attributes
       },
-      "text.accent": "#ffc799",      // Peach accent color
-      "border.focused": "#ffc799",   // Peach focused border
-      "link_text.hover": "#ffc799"   // Peach link hover
+      "text.accent": "#ffc799",
+      "border.focused": "#ffc799",
+      "link_text.hover": "#ffc799"
     },
 
-    /* --- ONE LIGHT THEME (Soft Light Mode) --- */
+    /* ---  ONE LIGHT THEME [Soft Light Mode] --- */
     "One Light": {
       "background": "#faf9f6",             // Soft cream window background
       "editor.background": "#faf9f6",      // Soft cream editor background
-      "editor.gutter.background": "#faf9f6", // Soft cream line numbers background
+      "editor.gutter.background": "#faf9f6", // Soft cream gutter background
       "editor.active_line.background": "#faf9f6", // Active line background
       "title_bar.background": "#faf9f6",   // Title bar background
       "tab_bar.background": "#faf9f6",     // Tab bar background
@@ -164,10 +201,9 @@
       "border.variant": "#faf9f6",         // Border variant
       "border": "#faf9f6",                 // Border color
     
-      /* SYNTAX HIGHLIGHTING COLORS (One Light) */
       "syntax": {
-        "comment": { "color": "#4a4a4a" },       // Dark gray comments for visibility
-        "comment.doc": { "color": "#4a4a4a" },   // Documentation comments
+        "comment": { "color": "#4a4a4a" },       // Dark gray comments for light mode readability
+        "comment.doc": { "color": "#4a4a4a" },   // Doc comments
         "keyword": { "color": "#9c3b00" },       // Deep rust/orange keywords
         "function": { "color": "#9c3b00" },      // Rust/orange functions
         "string": { "color": "#9c3b00" },        // Rust/orange strings
@@ -196,26 +232,26 @@
      UI COMPONENT & LAYOUT SETTINGS
      ========================================================== */
   "title_bar": {
-    "show_branch_name": false, // Hides git branch name from top title bar
-    "show_user_menu": false    // Hides user profile menu from title bar
+    "show_branch_name": false, // Hides the git branch name tag from the top bar
+    "show_user_menu": false    // Hides the user account profile icon menu from the top bar
   },
   "tab_bar": {
-    "show": false // Hides the file tabs bar across the top
+    "show": false // Hides the open files tab row across the top of the editor
   },
   "toolbar": {
-    "quick_actions": false // Hides quick action buttons in toolbars
+    "quick_actions": false // Hides quick action buttons in the top toolbar
   },
   "scrollbar": {
-    "show": "never" // Completely hides scrollbars for a cleaner look
+    "show": "never" // Hides side scrollbars completely for a minimalist distraction-free aesthetic
   },
   "gutter": {
     "min_line_number_digits": 0,
-    "folds": false // Hides code folding indicators in the gutter
+    "folds": false // Disables code block folding collapse arrows in the gutter
   },
-  "indent_guides": {}, // Indentation guide rules
+  "indent_guides": {}, // Indentation guide line properties
   "terminal": {
     "dock": "right",
-    "default_width": 300 // Docks the integrated terminal on the right side with 300px width
+    "default_width": 300 // Docks the built-in terminal window to the right-hand side with a 300px width
   },
 
   /* ==========================================================
@@ -225,8 +261,8 @@
     "clangd": {
       "binary": {
         "arguments": [
-          "--query-driver=C:\\MinGW\\bin\\gcc.exe", // Points clangd to your MinGW GCC compiler driver
-          "--fallback-flags=-IC:\\MinGW\\include -IC:\\MinGW\\lib\\gcc\\mingw32\\*\\include" // Sets fallback include paths for C compilation headers
+          "--query-driver=C:\\MinGW\\bin\\gcc.exe", // Points the C language server to your MinGW compiler
+          "--fallback-flags=-IC:\\MinGW\\include -IC:\\MinGW\\lib\\gcc\\mingw32\\*\\include" // Fallback header include directories for C compilation
         ]
       }
     }
