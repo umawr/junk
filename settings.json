@@ -33,7 +33,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark" // Change this to "Transparent Prism" or "Dark Violet (Transparent)" whenever you want transparency!
+    "dark": "Transparent Prism" // Change this to "Transparent Prism" or "Dark Violet (Transparent)" whenever you want transparency!
   },
   "agent": {
     "threads_sidebar": {
@@ -85,15 +85,15 @@
         "number": { "color": "#ffc799" },
         "boolean": { "color": "#ffc799" },
         "constant": { "color": "#ffc799" },
-        "type": { "color": "#f2f2f2" },
-        "variable": { "color": "#f2f2f2" },
-        "property": { "color": "#f2f2f2" },
-        "operator": { "color": "#f2f2f2" },
-        "punctuation": { "color": "#f2f2f2" },
-        "punctuation.bracket": { "color": "#f2f2f2" },
-        "punctuation.delimiter": { "color": "#f2f2f2" },
+        "type": { "color": "#ffffff" },
+        "variable": { "color": "#ffffff" },
+        "property": { "color": "#ffffff" },
+        "operator": { "color": "#ffffff" },
+        "punctuation": { "color": "#ffffff" },
+        "punctuation.bracket": { "color": "#ffffff" },
+        "punctuation.delimiter": { "color": "#ffffff" },
         "preproc": { "color": "#ffc799" },
-        "attribute": { "color": "#f2f2f2" }
+        "attribute": { "color": "#ffffff" }
       },
       "text.accent": "#ffc799",
       "border.focused": "#ffc799",
@@ -134,15 +134,15 @@
         "number": { "color": "#ffc799" },
         "boolean": { "color": "#ffc799" },
         "constant": { "color": "#ffc799" },
-        "type": { "color": "#f2f2f2" },
-        "variable": { "color": "#f2f2f2" },
-        "property": { "color": "#f2f2f2" },
-        "operator": { "color": "#f2f2f2" },
-        "punctuation": { "color": "#f2f2f2" },
-        "punctuation.bracket": { "color": "#f2f2f2" },
-        "punctuation.delimiter": { "color": "#f2f2f2" },
+        "type": { "color": "#ffffff" },
+        "variable": { "color": "#ffffff" },
+        "property": { "color": "#ffffff" },
+        "operator": { "color": "#ffffff" },
+        "punctuation": { "color": "#ffffff" },
+        "punctuation.bracket": { "color": "#ffffff" },
+        "punctuation.delimiter": { "color": "#ffffff" },
         "preproc": { "color": "#ffc799" },
-        "attribute": { "color": "#f2f2f2" }
+        "attribute": { "color": "#ffffff" }
       },
       "text.accent": "#ffc799",
       "border.focused": "#ffc799",
@@ -183,15 +183,15 @@
         "number": { "color": "#ffc799" },
         "boolean": { "color": "#ffc799" },
         "constant": { "color": "#ffc799" },
-        "type": { "color": "#f2f2f2" },
-        "variable": { "color": "#f2f2f2" },
-        "property": { "color": "#f2f2f2" },
-        "operator": { "color": "#f2f2f2" },
-        "punctuation": { "color": "#f2f2f2" },
-        "punctuation.bracket": { "color": "#f2f2f2" },
-        "punctuation.delimiter": { "color": "#f2f2f2" },
+        "type": { "color": "#ffffff" },
+        "variable": { "color": "#ffffff" },
+        "property": { "color": "#ffffff" },
+        "operator": { "color": "#ffffff" },
+        "punctuation": { "color": "#ffffff" },
+        "punctuation.bracket": { "color": "#ffffff" },
+        "punctuation.delimiter": { "color": "#ffffff" },
         "preproc": { "color": "#ffc799" },
-        "attribute": { "color": "#f2f2f2" }
+        "attribute": { "color": "#ffffff" }
       },
       "text.accent": "#ffc799",
       "border.focused": "#ffc799",
@@ -256,7 +256,8 @@
     "show": false
   },
   "toolbar": {
-    "quick_actions": false
+    "quick_actions": false,
+    "breadcrumbs": false
   },
   "scrollbar": {
     "show": "never"
